@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class MemoService {
 
     private final MemoRepository memoRepository;

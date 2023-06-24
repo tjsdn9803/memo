@@ -15,6 +15,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
+@Repository
 public class MemoRepository {
 
     private final JdbcTemplate jdbcTemplate;
