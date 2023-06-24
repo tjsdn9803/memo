@@ -17,6 +17,7 @@ import java.util.List;
 public class MemoRepository {
 
     private final JdbcTemplate jdbcTemplate;
+
     public MemoRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
 
@@ -58,6 +59,7 @@ public class MemoRepository {
             }
         });
     }
+
     public void update(Long id, MemoRequestDto requestDto) {
         //메모 수정
         String sql = "UPDATE memo SET username = ?, contents = ? WHERE id = ?";
